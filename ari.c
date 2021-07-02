@@ -5,6 +5,8 @@ const char* ari(char s[1000]){
     
     int char_count=0,word_count=0,sent_count=0,ari;
     float ari_calc;
+    const char *str;
+
 
     for(int i=0;i<strlen(s);i++){
 
