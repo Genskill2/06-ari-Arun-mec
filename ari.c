@@ -26,7 +26,7 @@ const char* ari(char s[1000]){
         }
     }
     ari_calc=(4.71 * char_count/word_count) + (0.5 * word_count/sent_count) - 21.43;
-    ari = round(ari_calc);
+    ari=ceil(ari_calc);
     switch(ari){
         case 1 : str="Kindergarten";
         break;
