@@ -18,12 +18,7 @@ const char* ari(char s[1000]){
             continue;
         }
     }
-    
-    printf("%d\n",char_count);
-    printf("%d\n",word_count);
-    printf("%d\n",sent_count);
     ari=round( (4.71 * char_count/word_count) + (0.5 * word_count/sent_count) - 21.43);
-    printf("%d",ari);
     switch(ari){
         case 1 : return "Kindergarten";
         break;
