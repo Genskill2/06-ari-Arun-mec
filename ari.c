@@ -1,5 +1,6 @@
 #include <string.h>
 #include <ctype.h>
+#include <math.h>
 
 const char* ari(char s[1000]){
     
@@ -25,7 +26,7 @@ const char* ari(char s[1000]){
         }
     }
     ari_calc=(4.71 * char_count/word_count) + (0.5 * word_count/sent_count) - 21.43;
-    ari = (int)( ari_calc+0.5) / 1.;
+    ari = roundof(ari_calc);
     switch(ari){
         case 1 : str="Kindergarten";
         break;
