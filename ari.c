@@ -1,3 +1,4 @@
+#include <string.h>
 const char* ari(char s[1000]){
     
     int char_count=0,word_count=0,sent_count=0,ari;
