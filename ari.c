@@ -1,6 +1,7 @@
 const char* ari(char s[1000]){
     
     int char_count=0,word_count=0,sent_count=0,ari;
+    float ari_calc;
 
     for(int i=0;i<strlen(s);i++){
 
@@ -18,7 +19,8 @@ const char* ari(char s[1000]){
             continue;
         }
     }
-    ari=(4.71 * char_count/word_count) + (0.5 * word_count/sent_count) - 21.43;
+    ari_calc=(4.71 * char_count/word_count) + (0.5 * word_count/sent_count) - 21.43;
+    ari = (int)( ari_calc+0.5) / 1.;
     switch(ari){
         case 1 : return "Kindergarten";
         break;
